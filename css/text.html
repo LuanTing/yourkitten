@@ -1,0 +1,153 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kitten</title>
+<script type="text/javascript" src="js/jquery-3.1.1.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Lato:100,300" rel="stylesheet">
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+<div class="row">
+<div class="col-md-6">
+<img class="title-logo" src="http://placekitten.com/140/100" alt="tnis is a logo">
+</div>
+<div class="col-md-6 text-right text-uppercase">
+<h1 class="title-supper text-thin">your kitten</h1>
+<h4>your story</h4>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12"><hr></div>
+</div>
+<p class="alert text-left"><b>click the following image to learn more</b></p>
+<div class="row">
+<div class="col-md-8">
+<img class="img-responsive" src="http://placekitten.com/800/400" data-toggle="modal" data-target="#project4">
+</div>
+<div class="col-md-4">	
+<h2>share your story</h2>
+<p class="warn">* Required field</p>
+<form method="post" > 
+   title:<div><input type="text" name="title">
+   <span class="warn">*</span></div>
+   name:<div><input type="text" name="title">
+   <span class="warn">*</span></div>
+   content:<div><textarea  class="content" name="content" rows="5" cols="40"></textarea></div>
+   <br>
+   <input type="submit" name="submit" value="submit" onclick="disp_alert()"> 
+   <script type="text/javascript">
+function disp_alert()
+{
+alert("OK")
+}
+</script>
+</form>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12">
+<h2 class="text-muted">Stories</h2>
+</div>
+</div>
+<div class="row text-center">
+<div class="col-md-4">
+<img class="img-responsive" src="http://placekitten.com/360/198" data-toggle="modal" data-target="#project1">
+<!--当想要对某个对象添加model时，要添加 data-toggle="modal" data-target="#model的id"-->
+<h3 class="text-uppercase">The wool ball is its favorite</h3>
+<p>By Lily</p>
+</div>
+<div class="col-md-4">
+<img class="img-responsive" src="http://placekitten.com/360/200" data-toggle="modal" data-target="#project2" >
+<h3 class="text-uppercase">She watched me to leave</h3>
+<p>By Ross</p>
+</div>
+<div class="col-md-4">
+<img class="img-responsive" src="http://placekitten.com/360/201" data-toggle="modal" data-target="#project3">
+<h3 class="text-uppercase">It snows!</h3>
+<p>By Eva</p>
+</div>
+</div>
+<p class="text-center">By Luanting</p>
+
+ <div class="modal fade" id="project1" <!--这里的id就是前面要实施model对象要添加的id名字-->tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">The wool ball is its favorite</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/360/198">
+                    Instead of loading your laundry – that soft, precious fabric that touches your skin every day – with stinky chemicals that are in dryer sheets, 
+					these felted wool dryer balls will do the same job in less time.In a nutshell: The wool soaks up some of the moisture in your laundry as it dries,
+					but then evenly distributes it into the air – helping your dryer stay humid longer, which exponentially reduces static cling. In addition, 
+					this “soaking and releasing” action makes your clothes dry faster. And all of these things together mean fewer wrinkles.
+					Best of all, if you make them tight enough and awesome enough, they’ll last up to 5 years. That’s 5 years without having to worry a single bit 
+					about static, dryer sheets, wrinkles, buying supplies, and failed presidential debates (you shouldn’t ever worry about that last thing, anyway). 
+					This is the best part of felted dryer balls. Mine, for three, cost about $5 total. For five years of drying pleasure.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="project2" <!--这里的id就是前面要实施model对象要添加的id名字-->tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">She watched me to leave</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/360/200">
+                     I learned a lot about HTML and CSS.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="project3" <!--这里的id就是前面要实施model对象要添加的id名字-->tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">It snows!</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/360/201">
+                    Bootstrap is very very useful.
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+	<div class="modal fade" id="project4" <!--这里的id就是前面要实施model对象要添加的id名字-->tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel"> The kitten world !</h4>
+                </div>
+                <div class="modal-body">
+                    <img class="img-responsive" src="http://placekitten.com/800/400">
+                 In there,</br>
+				 you can share your story of your kitten !</br>
+				 you can get others'story!</br>
+				 Welcome!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<html>

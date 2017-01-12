@@ -1,0 +1,65 @@
+/**{
+   outline: 1px solid red !important;
+  }*/
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  } 
+  .row{width:100%;display:flex;flex-wrap:wrap;}
+  .col-1{width:8.33%;}
+  .ccol-2{width:16.66%;}
+  .col-3{width:25%;}
+  .col-5{width:41.66%;}
+  .col-6{width:50%;}
+  .col-7{width:58.33%;}
+  .col-8{width:66.66%;}
+  .col-9{width:75%;}
+  .col-10{width:83.33%;}
+  .col-11{width:91.66%;}
+  .col-12{width:100%;}/*这是我自己定义的格式，若使用Bootstrap,且bootstrap里有的语言可以直接用，我自己可以不写这些*/
+  body{
+	  font-family: "Lato", sans-serif;
+	  color:#747784;
+	  font-weight:300;
+  }
+  .text-muted{
+	  color:#BCBBBB;
+  }/*text-muted可以使添加在里面的任何颜色都变更暗淡，更灰*/
+  .text-thin{
+	  font-weight:100;
+  }/*这便是我们载入的字体的更细的版本*/
+ .title-supper{
+	 font-size:60px;
+ }
+ .title-logo{
+	 margin-top:20px;
+ }
+  .modal-header,.modal-body{
+	  color:#2E8B57;
+  }
+  
+  .alert{
+	  color:#BCBBBB;
+  }
+  .warn{
+	  color:red;
+  }
+  
+  div.content{
+	  overflow: scroll;
+  }
+/*@media only screen and (max-width:500px) {
+	  p {display:none;}<!--当屏幕小于500px时，P元素会消失-->
+  }
+@media only screen and (min-width:500px) and (orientation:landscape) {
+	  p {display:none;}
+  }
+@media only screen and (min-width:500px) {
+	  p {display:none;}
+  } 
+@media only print and (max-width:500px) {
+	  p {display:none;}
+  }*/
+ 
